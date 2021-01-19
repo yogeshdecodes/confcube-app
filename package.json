@@ -1,7 +1,9 @@
 {
   "private": true,
-  "name": "gatsby",
+  "name": "superconf",
+  "description": "A next level social conf",
   "version": "1.0.0",
+  "license": "MIT",
   "dependencies": {
     "gatsby": "^2.18.14",
     "gatsby-image": "^2.0.15",
@@ -12,10 +14,16 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "@vercel/node": "1.8.5"
+    "@vercel/node": "1.8.5",
+    "prettier": "2.2.1"
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
