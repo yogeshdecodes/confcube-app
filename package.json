@@ -11,9 +11,14 @@
     "talks"
   ],
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^1.0.1",
+    "@chakra-ui/react": "^1.1.5",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
     "dotenv-webpack": "^1.7.0",
     "firebase": "^8.2.3",
-    "gatsby": "^2.27.4",
+    "framer-motion": "^3.2.2-rc.1",
+    "gatsby": "^2.31.1",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-create-client-paths": "^2.1.17",
     "gatsby-plugin-favicon": "^3.1.6",
@@ -21,11 +26,13 @@
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-postcss": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-source-contentful": "^4.5.3",
     "prop-types": "^15.6.1",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-firebaseui": "^4.1.0",
     "react-helmet": "^5.2.0",
+    "react-hook-form": "^6.14.2",
     "tailwindcss": "^1.0.5"
   },
   "devDependencies": {

@@ -1,44 +1,31 @@
 import React from "react"
 import View from "./View"
 import { getUser } from "../utils/auth"
+import { createUser, createPublicUser, updatePublicUser, getEventCool, roomfloor,getPublicUser } from "../utils/db";
+import { Box, Text } from "@chakra-ui/react";
+import { addUserToEvent } from "../utils/db";
+import { deleteUserFromEvent } from "../utils/db";
+import { getEvent } from "../utils/db";
+import DashboardShellMyEvents from "./DashboardShellMyEvents";
+import DashboardShell from "./DashboardShell";
+import Account from "./Account";
 
 const Profile = () => {
   const user = getUser();
-  const { displayName, email, emailVerified } = user;
-  const accessToken = user.stsTokenManager.accessToken; 
+  const { displayName,   photoURL, uid  } = user;
+    
+  const defaultPhotoUrl= !!photoURL?photoURL:"cloudinaryplaceholderavatarimage";
+  const userEvents= ["event1","event3"]
+  createUser(uid, user, defaultPhotoUrl, userEvents);
+  createPublicUser(uid, displayName, defaultPhotoUrl);
+ 
+ 
 
+  
   return (
-    <View title="Your Profile">
-        <div>
-          <p className="text-sm text-gray-600 flex items-center mb-4">
-            <svg className="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-            </svg>
-            Members only
-          </p>
-          <p className="text-gray-700 text-base">
-            <ul>
-                <li> 
-                  <div className="text-sm"><b>Name</b>:</div> 
-                  <div className="pl-2 ">{`${displayName}`}</div>
-                </li>
-                <li> 
-                  <div className="text-sm"><b>Email</b>:</div> 
-                  <div className="pl-2 ">{`${email}`}</div>
-                  </li>
-                <li> 
-                  <div className="text-sm"><b>Email Verified</b>:</div> 
-                  <div className="pl-2 ">{`${emailVerified}`}</div>
-                  </li>
-                <li> 
-                  <div className="text-sm"><b>Firebase Access Token</b>:</div> 
-                  <div className="pl-2 truncate" >{`${accessToken}`}</div>
-                </li>
-            </ul>
-          </p>
-        </div>
-    </View>
-  )
+     
+   
+  <Account />)
 }
 
 export default Profile
