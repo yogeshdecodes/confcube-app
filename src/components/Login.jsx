@@ -4,6 +4,7 @@ import View from "./View"
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { setUser, isLoggedIn } from "../utils/auth"
 import firebase from "gatsby-plugin-firebase"
+import DashboardShell from "./DashboardShell";
 
 const Login = () => {
 
@@ -29,10 +30,11 @@ const Login = () => {
   }
 
   return (
+      <DashboardShell>
     <View title="Log In">
       <p>Please sign-in to access to the private route:</p>
       {firebase && <StyledFirebaseAuth uiConfig={getUiConfig(firebase.auth)} firebaseAuth={firebase.auth()}/>}
-    </View>
+    </View></DashboardShell>
   );
 
 }
