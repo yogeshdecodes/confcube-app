@@ -1,8 +1,8 @@
 // import firebase from "gatsby-plugin-firebase"
-import firebase from './firebase'
-require("firebase/firestore");
+import firestore from './firebase'
+// require("firebase/firestore");
 
-const firestore = firebase.firestore();
+// const firestore = firebase.firestore();
 
 export function createUser(uid, data, defaultPhotoUrl, userEvents) {
   return firestore
