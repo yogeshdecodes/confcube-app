@@ -1,6 +1,11 @@
-![Gatsby Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/gatsby.svg)
+# ConfCube
+A Networking App for tech events/confrences/webinar/seminar/meetup/summit.
 
-# Gatsby Example
+<img src="./src/images/screenshot.png">
+
+ 
+
+## Gatsby Example
 
 This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction) that can be deployed with Vercel and zero configuration.
 
