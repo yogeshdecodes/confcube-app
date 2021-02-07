@@ -3,7 +3,7 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: 'super conf app',
+    title: `Gatsby Firebase Authentication`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,15 +21,6 @@ module.exports = {
       options: { prefixes: [`/app/*`] }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'Super Conf social meet',
-        short_name: 'Super Conf social meet',
-        start_url: '/',
-        icon: 'src/images/gatsby-icon.png',
-      },
-    },
-        {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
@@ -43,6 +34,5 @@ module.exports = {
         }
       }
     }
-  ],
-};
-
+  ]
+}
