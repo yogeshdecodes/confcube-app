@@ -1,9 +1,6 @@
 import firebase from "gatsby-plugin-firebase"
  
-
-export const isBrowser = () => typeof window !== "undefined"
-let firestore={};
-isBrowser() && (firestore = firebase.firestore())
+const firestore = firebase.firestore()
 
 export function createUser(uid, data, defaultPhotoUrl ) {
   return firestore
