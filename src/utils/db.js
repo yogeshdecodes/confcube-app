@@ -1,7 +1,4 @@
-import firebase from './firebase';
- 
-
-const firestore = firebase.firestore()
+import firestore from './firebase';
 
 export function createUser(uid, data, defaultPhotoUrl ) {
   return firestore
