@@ -1,53 +1,44 @@
 {
-  "private": true,
-  "name": "superconf",
-  "description": "A next level social conf",
+  "name": "confcube-virtual-networking",
+  "description": "Jamstack App using gatsby for virtual Events",
   "version": "1.0.0",
   "author": "Yogesh Yadav <2803yogesh.yadav@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "conference",
-    "meetup",
-    "talks"
-  ],
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^1.0.1",
     "@chakra-ui/react": "^1.1.5",
+    "@chakra-ui/icons": "^1.0.4",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "dotenv-webpack": "^1.7.0",
-    "firebase": "^8.2.3",
+    "firebase": "^7.17.1",
     "framer-motion": "^3.2.2-rc.1",
     "gatsby": "^2.31.1",
-    "gatsby-image": "^2.0.15",
     "gatsby-plugin-create-client-paths": "^2.1.17",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-firebase": "^0.2.0-beta.4",
-    "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-postcss": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-source-contentful": "^4.5.3",
     "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
     "react-firebaseui": "^4.1.0",
     "react-helmet": "^5.2.0",
-    "react-hook-form": "^6.14.2",
-    "tailwindcss": "^1.0.5"
+    "react-hook-form": "^6.14.2"
   },
-  "devDependencies": {
-    "@vercel/node": "1.8.5",
-    "prettier": "2.2.1"
-  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "npm run develop",
+    "develop": "gatsby develop",
+    "dev": "npm run develop",
+    "serve": "gatsby serve",
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
     "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
-    "serve": "gatsby serve",
     "clean": "rm -rf public && rm -rf .cache",
-    "format:js": "prettier '**/*.{js,jsx,json,md}' --write",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lint:js": "eslint --ext .js,.jsx .",
+    "format:js": "prettier '**/*.{js,jsx}' --write"
   }
 }
