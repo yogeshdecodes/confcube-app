@@ -5,22 +5,29 @@ A Networking App for tech events/confrences/webinar/seminar/meetup/summit.
 
  
 
-## Gatsby Example
+## Inspiration
 
-This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction) that can be deployed with Vercel and zero configuration.
+Before Covid we generally network with people in tech events physically but after everything changes, most events are now hosting online which create no room for participant to network and collabrate with each others. Second reason is that I want to participate in hackathons so I built this project for [Hashnode](https://hashnode.com) and [Vercel](https://vercel.com) hackathon.
 
-## Deploy Your Own
+## Getting Started
 
-Deploy your own Gatsby project, along with Serverless Functions, with Vercel.
+First, install the dependencies:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/gatsby)
-
-_Live Example: https://gatsby.now-examples.now.sh_
-
-### How We Created This Example
-
-To get started with Gatsby on Vercel, you can use the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) to initialize the project:
-
-```shell
-$ gatsby new gatsby-site
+```bash
+npm install
 ```
+
+Second, run the development server:
+
+```bash
+gatsby develop
+```
+
+Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
+
+## Contributing
+Feel free to open an Issue or pull request. Make you Pull Request now and help the project grow.
+
+**Licensed Under [MIT](https://github.com/yogeshjournal/confcube/blob/main/LICENSE)**
+
+### Star the Project 🌟
