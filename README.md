@@ -7,7 +7,7 @@ A Networking App for tech events/confrences/webinar/seminar/meetup/summit.
 
 ## Inspiration
 
-Before Covid we generally network with people in tech events physically but after everything changes, most events are now hosting online which create no room for participant to network and collabrate with each others. Second reason is that I want to participate in hackathons so I built this project for [Hashnode](https://hashnode.com) and [Vercel](https://vercel.com) hackathon.
+Before Covid we generally network with people in tech events physically but after covid everything changes, most events are now hosting online which create no room for participants to network and collabrate with each others. Second reason is that I want to participate in hackathons so I built this project for [Hashnode](https://hashnode.com) and [Vercel](https://vercel.com) hackathon.
 
 ## Getting Started
 
